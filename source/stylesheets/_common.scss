@@ -1,0 +1,31 @@
+body {
+  background: $blue;
+  color: darken($blue, 20%);
+}
+
+#layout {
+  padding-left: $sidebar_width;
+  position: relative;
+}
+
+.sidebar {
+  background: $white;
+  bottom: 0;
+  color: $blue;
+  margin-left: $sidebar_width * -1;
+  position: fixed;
+  top: 0;
+  width: $sidebar_width;
+}
+
+header {
+  margin: 25% 2em 0;
+  text-align: center;
+}
+
+a {
+  color: darken($blue, 7%);
+  &:hover {
+    color: $blue;
+  }
+}

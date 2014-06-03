@@ -1,0 +1,65 @@
+#layout {
+  padding-left: 0;
+}
+
+.sidebar {
+  position: static;
+  margin-left: auto;
+}
+
+header {
+  margin: 0;
+}
+
+hgroup {
+  background: rgba($white, 0.8);
+  height: 70px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: 999;
+}
+
+h1 {
+  font-size: 1.7em;
+  line-height: 1.3;
+  margin: 0 1.5em;
+}
+
+#percentage {
+  position: relative;
+  top: 90px;
+  margin: 0 auto 110px;
+}
+
+#message {
+  background: rgba($blue, 0.95);
+  margin: 0;
+  padding: 2%;
+  position: fixed;
+  top: 90px;
+  width: 96%;
+  @include border-radius(0, 0);
+  &:after {
+    display: none;
+  }
+}
+
+.content {
+  footer.footer {
+    display: block;
+    padding: 30px 0 50px;
+    position: static;
+    width: 100%;
+    nav.nav {
+      .nav-list {
+        background: transparent;
+        margin: 0;
+        a {
+          color: darken($blue, 13%);
+        }
+      }
+    }
+  }
+}

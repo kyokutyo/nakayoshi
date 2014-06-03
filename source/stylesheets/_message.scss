@@ -1,0 +1,36 @@
+#message {
+  $theme: $blue; // or $raspberry
+  background: $theme;
+  color: $white;
+  display: none;
+  padding: 10px;
+  position: relative;
+  @include border-radius(5px, 5px);
+  &:after {
+    $size: 8;
+    border: {
+      color: transparent transparent transparent $theme;
+      style: solid;
+      width: #{$size}px #{$size - 2}px;
+    }
+    display: block;
+    content: '';
+    height: 0;
+    position: absolute;
+    right: #{-2 * ($size - 2)}px;
+    top: 29px;
+    width: 0;
+  }
+  p {
+    text-align: left;
+    margin: 0 0 1em;
+  }
+  .date {
+    color: mix($white, $theme, 50%);
+    font-size: 0.9em;
+    text-align: right;
+    i {
+      margin-right: 3px;
+    }
+  }
+}

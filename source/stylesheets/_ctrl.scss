@@ -1,0 +1,52 @@
+#ctrl {
+  $theme: $blue; // or $raspberry
+  background: rgba($white, 0.9);
+  padding: 15px;
+  position: fixed;
+  right: 8px;
+  top: 8px;
+  @include border-radius(3px, 3px);
+  nav.nav {
+    h5 {
+      border-bottom: solid 1px $theme;
+      color: darken($theme, 20%);
+      padding: 3px;
+      margin: 0 0 8px;
+      i {
+        $size: 18;
+        $padding_top: $size/6;
+        background: $theme;
+        color: $white;
+        text-align: center;
+        display: inline-block;
+        margin-right: #{$size/4}px;
+        padding-top: #{$padding_top}px;
+        height: #{$size - $padding_top}px;
+        width: #{$size}px;
+        @include border-radius(#{$size/2}px, #{$size/2}px);
+      }
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      li {
+        padding: 0;
+        a {
+          color: darken($theme, 7%);
+          font-size: 0.8em;
+          text-decoration: none;
+          padding: 5px;
+          &:hover {
+            color: $theme;
+          }
+          i {
+            display: inline-block;
+            font-weight: bold;
+            margin-right: 3px;
+            width: 13px;
+          }
+        }
+      }
+    }
+  }
+}

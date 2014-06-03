@@ -1,0 +1,34 @@
+footer.footer {
+  bottom: 0;
+  position: fixed;
+  text-align: center;
+  width: $sidebar_width;
+  nav.nav {
+    .nav-list {
+      background: rgba($white, .5);
+      text-align: center;
+      padding: 10px;
+      margin: 15px 50px;
+      @include border-radius(5px, 5px);
+      .nav-items {
+        .icon {
+          $size: 26;
+          $radius_size: $size/2;
+          $gravatar_hash: '14bc73163b8964e6d92695d48b90fc89';
+          background: {
+            image: url('http://www.gravatar.com/avatar/#{$gravatar_hash}.png?s=#{$size}');
+            position: center center;
+            repeat: no-repeat;
+          };
+          display: inline-block;
+          margin: 0 #{$size/2.7}px;
+          height: #{$size}px;
+          position: relative;
+          top: #{$size/2.9}px;
+          width: #{$size}px;
+          @include border-radius(#{$radius_size}px, #{$radius_size}px);
+        }
+      }
+    }
+  }
+}
