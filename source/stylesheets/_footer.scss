@@ -10,6 +10,15 @@ footer.footer {
       padding: 10px;
       margin: 15px 50px;
       @include border-radius(5px, 5px);
+      .social {
+        > iframe,
+        > .fb-like {
+          margin: 0 7px;
+        }
+        > .fb-like {
+          top: -4px;
+        }
+      }
       .nav-items {
         .icon {
           $size: 26;
