@@ -1,25 +1,32 @@
-これまでに夫婦で泊まった都道府県
-================================
+これまでに夫婦で行った都道府県
+==============================
 
 ![開発中の画面キャプチャ](https://dl.dropboxusercontent.com/u/343/travel-memo.png)
 
 開発
 ----
 
-    $ cd path/to/nakayoshi
-    $ bundle exec middleman server
+```
+$ cd path/to/nakayoshi
+$ bundle exec middleman server
+```
 
-本番反映
+
+デプロイ
 --------
 
-    $ bundle exec middleman build
+```
+$ bundle exec middleman build
+```
 
-(build後、middleman-syncによってS3に反映される)
+(build 後、 middleman-sync によって S3 に反映される)
+
 
 今後やろうかと思ってること
 --------------------------
 
 * [Issues](https://github.com/kyokutyo/nakayoshi/issues)
+
 
 使ってるもの
 ------------
