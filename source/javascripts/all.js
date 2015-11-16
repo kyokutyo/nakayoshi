@@ -1,6 +1,6 @@
 $(function() {
     "use strict";
-    var parcentage, percentage_box_width, bg_color,
+    var percentage, percentage_box_width, bg_color,
         $items = $('.content li'),
         $visited_items = $items.filter('.v'),
         $next_items = $items.filter('.n'),
