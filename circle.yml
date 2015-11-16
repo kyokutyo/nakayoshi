@@ -6,4 +6,4 @@ machine:
     RACK_ENV: test
 test:
   override:
-    - node_modules/eslint/bin/eslint.js source/js
+    - node_modules/eslint/bin/eslint.js source/javascripts
