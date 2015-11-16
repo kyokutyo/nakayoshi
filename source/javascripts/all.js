@@ -35,7 +35,7 @@ $(function() {
         var $t = $(this),
             $li = $t.closest('li');
 
-        if ($li.hasClass('on')) {
+        if($li.hasClass('on')) {
             $items.show();
             $li.removeClass('on')
                .find('i').attr('class', 'icon-check-empty');
