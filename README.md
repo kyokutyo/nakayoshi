@@ -19,7 +19,8 @@ $ bundle exec middleman server
 $ bundle exec middleman build
 ```
 
-(build 後、 middleman-sync によって S3 に反映される)
+環境変数 `GA_TRACKING_ID` , `AWS_ACCESS_KEY_ID` と `AWS_SECRET_ACCESS_KEY` を設定しておく必要がある
+
 
 
 今後やろうかと思ってること

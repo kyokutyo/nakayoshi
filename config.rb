@@ -75,7 +75,7 @@ configure :build do
 
   # Activate google-analytics extension
   activate :google_analytics do |ga|
-    ga.tracking_id = 'UA-xxxxxx-1'
+    ga.tracking_id = ENV['GA_TRACKING_ID']
   end
 end
 
@@ -94,10 +94,10 @@ activate :sync do |sync|
   sync.fog_region = 'ap-northeast-1'
 
   # AWSアクセスキーID
-  sync.aws_access_key_id = 'xxxxxxxxxxxxxxxxxxxx'
+  sync.aws_access_key_id = ENV['AWS_ACCESS_KEY_ID']
 
   # AWSシークレットアクセスキー
-  sync.aws_secret_access_key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+  sync.aws_secret_access_key = ENV['AWS_SECRET_ACCESS_KEY']
 
   # アップロード時に既存ファイルを削除するかどうか。`delete`または`keep`
   sync.existing_remote_files = 'keep'
@@ -107,5 +107,5 @@ activate :sync do |sync|
 
   # Middlemanのビルド完了後に自動で同期を行うかどうか。`true`または`false`
   # デフォルトでは行う(`true`)
-  sync.after_build = true
+  sync.after_build = false
 end
