@@ -107,5 +107,5 @@ activate :sync do |sync|
 
   # Middlemanのビルド完了後に自動で同期を行うかどうか。`true`または`false`
   # デフォルトでは行う(`true`)
-  sync.after_build = false
+  sync.after_build = true
 end
