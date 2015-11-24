@@ -22,3 +22,5 @@ gem 'middleman-pure', :github => 'yterajima/middleman-pure'
 gem 'font-awesome-middleman', '~> 1.0.1'
 gem 'middleman-google-analytics'
 gem 'middleman-sync', '~> 3.0.12'
+gem 'sass', '~> 3.4.1'
+gem 'scss_lint', require: false
