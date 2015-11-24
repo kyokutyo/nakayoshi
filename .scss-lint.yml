@@ -32,6 +32,6 @@ linters:
     SpaceAroundOperator:
         enabled: false
     StringQuotes:
-        enabled: false
+        enabled: true
     VendorPrefix:
         enabled: false
