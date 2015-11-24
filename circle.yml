@@ -7,3 +7,4 @@ machine:
 test:
   override:
     - node_modules/eslint/bin/eslint.js source/javascripts
+    - bundle exec scss-lint source/stylesheets/
