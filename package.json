@@ -3,6 +3,7 @@
   "description": "これまでに夫婦で行った都道府県",
   "dependencies": {},
   "devDependencies": {
+    "babel-cli": "^6.1.18",
     "eslint": "^1.9.0"
   },
   "scripts": {
