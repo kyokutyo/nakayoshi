@@ -1,3 +1,5 @@
+scss_files: 'source/stylesheets/**/*.scss'
+exclude: 'source/stylesheets/*.css'
 linters:
     ColorVariable:
         enabled: false
