@@ -22,6 +22,22 @@ $ bundle exec middleman build
 環境変数 `GA_TRACKING_ID` , `AWS_ACCESS_KEY_ID` と `AWS_SECRET_ACCESS_KEY` を設定しておく必要がある
 
 
+Lint
+----
+
+* ESLint
+
+```
+$ ./node_modules/eslint/bin/eslint.js source/javascripts
+```
+
+* scss-lint
+
+```
+$ bundle exec scss-lint source/stylesheets/
+```
+
+
 
 今後やろうかと思ってること
 --------------------------

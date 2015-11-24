@@ -1,16 +1,16 @@
-@charset "utf-8";
+@charset 'utf-8';
 
-@import "pure-min";
-@import "font-awesome";
-@import "compass";
-@import "variables";
-@import "common";
-@import "ctrl";
-@import "percentage";
-@import "message";
-@import "footer";
-@import "prefs";
+@import 'pure-min';
+@import 'font-awesome';
+@import 'compass';
+@import 'variables';
+@import 'common';
+@import 'ctrl';
+@import 'percentage';
+@import 'message';
+@import 'footer';
+@import 'prefs';
 
 @media (max-width: 767px) {
-  @import "smartphone";
+  @import 'smartphone';
 }

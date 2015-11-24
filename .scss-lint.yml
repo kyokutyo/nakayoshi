@@ -1,0 +1,39 @@
+scss_files: 'source/stylesheets/**/*.scss'
+exclude: 'source/stylesheets/*.css'
+linters:
+    ColorVariable:
+        enabled: false
+    Comment:
+        enabled: false
+    DeclarationOrder:
+        enabled: false
+    DuplicateProperty:
+        enabled: false
+    EmptyLineBetweenBlocks:
+        enabled: false
+    FinalNewline:
+        enabled: false
+    IdSelector:
+        enabled: false
+    Indentation:
+        enabled: false
+    LeadingZero:
+        enabled: false
+    NameFormat:
+        enabled: false
+    NestingDepth:
+        enabled: false
+    PropertySortOrder:
+        enabled: false
+    PseudoElement:
+        enabled: false
+    QualifyingElement:
+        enabled: false
+    SelectorDepth:
+        enabled: false
+    SpaceAroundOperator:
+        enabled: false
+    StringQuotes:
+        enabled: true
+    VendorPrefix:
+        enabled: false
