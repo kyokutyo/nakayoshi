@@ -12,6 +12,7 @@
       color: darken($theme, 20%);
       padding: 3px;
       margin: 0 0 8px;
+
       i {
         $size: 18;
         $padding_top: $size/6;
@@ -26,19 +27,24 @@
         @include border-radius(#{$size/2}px, #{$size/2}px);
       }
     }
+
     ul {
       padding: 0;
       margin: 0;
+
       li {
         padding: 0;
+
         a {
           color: darken($theme, 7%);
           font-size: 0.8em;
           text-decoration: none;
           padding: 5px;
+
           &:hover {
             color: $theme;
           }
+
           i {
             display: inline-block;
             font-weight: bold;

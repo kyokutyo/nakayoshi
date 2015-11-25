@@ -10,7 +10,7 @@ linters:
     DuplicateProperty:
         enabled: true
     EmptyLineBetweenBlocks:
-        enabled: false
+        enabled: true
     FinalNewline:
         enabled: false
     IdSelector:
