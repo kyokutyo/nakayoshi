@@ -25,6 +25,7 @@ header {
 
 a {
   color: darken($blue, 7%);
+
   &:hover {
     color: $blue;
   }
