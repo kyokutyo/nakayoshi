@@ -21,14 +21,17 @@
     top: 29px;
     width: 0;
   }
+
   p {
     text-align: left;
     margin: 0 0 1em;
   }
+
   .date {
     color: mix($white, $theme, 50%);
     font-size: 0.9em;
     text-align: right;
+
     i {
       margin-right: 3px;
     }
