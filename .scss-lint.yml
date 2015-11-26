@@ -12,7 +12,7 @@ linters:
     EmptyLineBetweenBlocks:
         enabled: true
     FinalNewline:
-        enabled: false
+        enabled: true
     IdSelector:
         enabled: false
     Indentation:
