@@ -5,17 +5,17 @@
   }
 
   li {
-    background: transparentize($white, 0.7);
+    background: transparentize($white, .7);
     color: darken($blue, 20%);
     list-style: none;
     margin: 4px;
     padding: 7px;
     @include border-radius(3px, 3px);
     &.v {
-      background: transparentize($white, 0.4);
+      background: transparentize($white, .4);
 
       &:hover {
-        background: transparentize($white, 0.3);
+        background: transparentize($white, .3);
         cursor: pointer;
       }
     }

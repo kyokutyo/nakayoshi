@@ -1,6 +1,6 @@
 #ctrl {
   $theme: $blue; // or $raspberry
-  background: rgba($white, 0.9);
+  background: rgba($white, .9);
   padding: 15px;
   position: fixed;
   right: 8px;
@@ -37,7 +37,7 @@
 
         a {
           color: darken($theme, 7%);
-          font-size: 0.8em;
+          font-size: .8em;
           text-decoration: none;
           padding: 5px;
 
