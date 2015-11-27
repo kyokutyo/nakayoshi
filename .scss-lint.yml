@@ -18,7 +18,7 @@ linters:
     Indentation:
         enabled: true
     LeadingZero:
-        enabled: false
+        enabled: true
     NameFormat:
         enabled: false
     NestingDepth:
