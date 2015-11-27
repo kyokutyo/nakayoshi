@@ -16,7 +16,7 @@ linters:
     IdSelector:
         enabled: false
     Indentation:
-        enabled: false
+        enabled: true
     LeadingZero:
         enabled: false
     NameFormat:
