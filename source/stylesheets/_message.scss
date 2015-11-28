@@ -13,8 +13,8 @@
       style: solid;
       width: #{$size}px #{$size - 2}px;
     }
-    display: block;
     content: '';
+    display: block;
     height: 0;
     position: absolute;
     right: #{-2 * ($size - 2)}px;
@@ -23,8 +23,8 @@
   }
 
   p {
-    text-align: left;
     margin: 0 0 1em;
+    text-align: left;
   }
 
   .date {
