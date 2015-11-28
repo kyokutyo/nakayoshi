@@ -3,8 +3,8 @@
 }
 
 .sidebar {
-  position: static;
   margin-left: auto;
+  position: static;
 }
 
 header {
@@ -28,9 +28,9 @@ h1 {
 }
 
 #percentage {
+  margin: 0 auto 110px;
   position: relative;
   top: 90px;
-  margin: 0 auto 110px;
 }
 
 #message {

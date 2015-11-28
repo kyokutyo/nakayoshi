@@ -24,7 +24,7 @@ linters:
     NestingDepth:
         enabled: false
     PropertySortOrder:
-        enabled: false
+        enabled: true
     PseudoElement:
         enabled: false
     QualifyingElement:
