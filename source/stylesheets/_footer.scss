@@ -25,7 +25,7 @@ footer.footer {
       .nav-items {
         .icon {
           $size: 26;
-          $radius_size: $size/2;
+          $radius_size: $size / 2;
           $gravatar_hash: '14bc73163b8964e6d92695d48b90fc89';
           background: {
             image: url('http://www.gravatar.com/avatar/#{$gravatar_hash}.png?s=#{$size}');
@@ -34,9 +34,9 @@ footer.footer {
           };
           display: inline-block;
           height: #{$size}px;
-          margin: 0 #{$size/2.7}px;
+          margin: 0 #{$size / 2.7}px;
           position: relative;
-          top: #{$size/2.9}px;
+          top: #{$size / 2.9}px;
           width: #{$size}px;
           @include border-radius(#{$radius_size}px, #{$radius_size}px);
         }
