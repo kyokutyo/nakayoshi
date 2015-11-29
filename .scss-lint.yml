@@ -32,7 +32,7 @@ linters:
     SelectorDepth:
         enabled: false
     SpaceAroundOperator:
-        enabled: false
+        enabled: true
     StringQuotes:
         enabled: true
     VendorPrefix:
