@@ -4,7 +4,7 @@ linters:
     ColorVariable:
         enabled: false
     Comment:
-        enabled: false
+        enabled: true
     DeclarationOrder:
         enabled: false
     DuplicateProperty:
