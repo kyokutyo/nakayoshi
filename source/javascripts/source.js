@@ -1,18 +1,17 @@
 $(function() {
     "use strict";
-    var percentage, percentage_box_width, bg_color,
-        $items = $('.content li'),
-        $visited_items = $items.filter('.v'),
-        $next_items = $items.filter('.n'),
-        $message_box = $('#message'),
-        $percentage_box = $('#percentage'),
-        $btn_filter_visited = $('#filter_v'),
-        $btn_filter_next = $('#filter_n'),
-        is_smartphone = !$('.sidebar footer').is(':visible');
+    const $items = $('.content li');
+    const $visited_items = $items.filter('.v');
+    const $next_items = $items.filter('.n');
+    const $message_box = $('#message');
+    const $percentage_box = $('#percentage');
+    const $btn_filter_visited = $('#filter_v');
+    const $btn_filter_next = $('#filter_n');
+    const is_smartphone = !$('.sidebar footer').is(':visible');
 
     // message
     $visited_items.hover(function() {
-        var $t = $(this);
+        const $t = $(this);
 
         $message_box.find('p').html($t.data('msg')).end()
                     .find('.date span').html($t.data('date')).end()
@@ -23,17 +22,17 @@ $(function() {
     });
 
     // percentage
-    percentage = Math.floor($visited_items.length/$items.length * 100);
-    percentage_box_width = $percentage_box.width() + 17; // 余白があるので大きめの画像を取得
-    bg_color = $.fmtColor($('body').css("background-color")).replace('#','');
+    const percentage = Math.floor($visited_items.length/$items.length * 100);
+    const percentage_box_width = $percentage_box.width() + 17; // 余白があるので大きめの画像を取得
+    const bg_color = $.fmtColor($('body').css("background-color")).replace('#','');
 
     $percentage_box.html('<strong>' + $visited_items.length + '</strong>/' + $items.length)
                        .css('background-image', 'url("http://chart.apis.google.com/chart?cht=p&chd=t:' + percentage + ',' + (100 - percentage) + '&chs=' + percentage_box_width + 'x' + percentage_box_width + '&chco=' + bg_color + '")');
 
     // filter_visited
     $btn_filter_visited.on('click', function() {
-        var $t = $(this),
-            $li = $t.closest('li');
+        const $t = $(this);
+        const $li = $t.closest('li');
 
         if ($li.hasClass('on')) {
             $items.show();
@@ -48,7 +47,7 @@ $(function() {
         }
     })
     .on('mouseover', function() {
-        var $t = $(this);
+        const $t = $(this);
 
         if ($t.closest('li').hasClass('on')) {
             $t.find('i').attr('class', 'icon-check-empty');
@@ -57,7 +56,7 @@ $(function() {
         }
     })
     .on('mouseout', function() {
-        var $t = $(this);
+        const $t = $(this);
 
         if ($t.closest('li').hasClass('on')) {
             $t.find('i').attr('class', 'icon-check');

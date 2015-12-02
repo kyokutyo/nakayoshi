@@ -45,6 +45,7 @@
 			"no-sequences": 2,
 			"no-throw-literal": 2,
 			"no-unused-expressions": 2,
+			"no-var": 2,
 			"no-void": 2,
 			"no-warning-comments": [1, { "terms": ["todo", "fixme", "xxx"], "location": "anywhere" }],
 			"no-with": 2,
@@ -60,6 +61,7 @@
 		"env": {
 			"browser": true,
 			"jquery": true,
+			"es6": true,
 		},
 		"globals": {
 			"_": false,
