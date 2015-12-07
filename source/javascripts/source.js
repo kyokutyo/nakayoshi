@@ -1,5 +1,6 @@
 $(function() {
     "use strict";
+
     const $items = $('.content li');
     const $visited_items = $items.filter('.v');
     const $next_items = $items.filter('.n');
