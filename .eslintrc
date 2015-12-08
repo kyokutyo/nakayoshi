@@ -45,9 +45,11 @@
 			"no-sequences": 2,
 			"no-throw-literal": 2,
 			"no-unused-expressions": 2,
+			"no-var": 2,
 			"no-void": 2,
 			"no-warning-comments": [1, { "terms": ["todo", "fixme", "xxx"], "location": "anywhere" }],
 			"no-with": 2,
+			"prefer-const" : 2,
 			"quotes": 0,
 			"radix": 2,
 			"semi": 2,
@@ -57,11 +59,12 @@
 			"wrap-iife": [2, "any"],
 			"yoda": [2, "never"],
 	},
-		"env": {
-			"browser": true,
-			"jquery": true,
-		},
-		"globals": {
-			"_": false,
-		},
+	"env": {
+		"browser": true,
+		"jquery": true,
+		"es6": true,
+	},
+	"globals": {
+		"_": false,
+	},
 }

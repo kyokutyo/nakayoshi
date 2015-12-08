@@ -1,17 +1,16 @@
+'use strict';
+
 $(function () {
     "use strict";
 
-    var percentage,
-        percentage_box_width,
-        bg_color,
-        $items = $('.content li'),
-        $visited_items = $items.filter('.v'),
-        $next_items = $items.filter('.n'),
-        $message_box = $('#message'),
-        $percentage_box = $('#percentage'),
-        $btn_filter_visited = $('#filter_v'),
-        $btn_filter_next = $('#filter_n'),
-        is_smartphone = !$('.sidebar footer').is(':visible');
+    var $items = $('.content li');
+    var $visited_items = $items.filter('.v');
+    var $next_items = $items.filter('.n');
+    var $message_box = $('#message');
+    var $percentage_box = $('#percentage');
+    var $btn_filter_visited = $('#filter_v');
+    var $btn_filter_next = $('#filter_n');
+    var is_smartphone = !$('.sidebar footer').is(':visible');
 
     // message
     $visited_items.hover(function () {
@@ -23,16 +22,16 @@ $(function () {
     });
 
     // percentage
-    percentage = Math.floor($visited_items.length / $items.length * 100);
-    percentage_box_width = $percentage_box.width() + 17; // 余白があるので大きめの画像を取得
-    bg_color = $.fmtColor($('body').css("background-color")).replace('#', '');
+    var percentage = Math.floor($visited_items.length / $items.length * 100);
+    var percentage_box_width = $percentage_box.width() + 17; // 余白があるので大きめの画像を取得
+    var bg_color = $.fmtColor($('body').css("background-color")).replace('#', '');
 
     $percentage_box.html('<strong>' + $visited_items.length + '</strong>/' + $items.length).css('background-image', 'url("http://chart.apis.google.com/chart?cht=p&chd=t:' + percentage + ',' + (100 - percentage) + '&chs=' + percentage_box_width + 'x' + percentage_box_width + '&chco=' + bg_color + '")');
 
     // filter_visited
     $btn_filter_visited.on('click', function () {
-        var $t = $(this),
-            $li = $t.closest('li');
+        var $t = $(this);
+        var $li = $t.closest('li');
 
         if ($li.hasClass('on')) {
             $items.show();
