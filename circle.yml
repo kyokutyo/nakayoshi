@@ -6,5 +6,5 @@ machine:
     RACK_ENV: test
 test:
   override:
-    - node_modules/eslint/bin/eslint.js source/javascripts
+    - npm run js:lint
     - bundle exec scss-lint source/stylesheets/
