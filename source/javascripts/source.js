@@ -1,4 +1,4 @@
-$(function() {
+$(() => {
     "use strict";
 
     const $items = $('.content li');
@@ -18,7 +18,7 @@ $(function() {
                     .find('.date span').html($t.data('date')).end()
                     .show();
     },
-    function() {
+    () => {
         $message_box.hide();
     });
 
@@ -28,7 +28,7 @@ $(function() {
     const bg_color = $.fmtColor($('body').css("background-color")).replace('#','');
 
     $percentage_box.html('<strong>' + $visited_items.length + '</strong>/' + $items.length)
-                       .css('background-image', 'url("http://chart.apis.google.com/chart?cht=p&chd=t:' + percentage + ',' + (100 - percentage) + '&chs=' + percentage_box_width + 'x' + percentage_box_width + '&chco=' + bg_color + '")');
+                   .css('background-image', 'url("http://chart.apis.google.com/chart?cht=p&chd=t:' + percentage + ',' + (100 - percentage) + '&chs=' + percentage_box_width + 'x' + percentage_box_width + '&chco=' + bg_color + '")');
 
     // filter_visited
     $btn_filter_visited.on('click', function() {
