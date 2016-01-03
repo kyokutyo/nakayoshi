@@ -3,11 +3,9 @@ $(() => {
 
     const $items = $('.content li');
     const $visited_items = $items.filter('.v');
-    const $next_items = $items.filter('.n');
     const $message_box = $('#message');
     const $percentage_box = $('#percentage');
     const $btn_filter_visited = $('#filter_v');
-    const $btn_filter_next = $('#filter_n');
     const is_smartphone = !$('.sidebar footer').is(':visible');
 
     // message
