@@ -1,6 +1,6 @@
-$(() => {
-    "use strict";
+import { List, Map } from 'immutable';
 
+$(() => {
     const $items = $('.content li');
     const $visited_items = $items.filter('.v');
     const $message_box = $('#message');
