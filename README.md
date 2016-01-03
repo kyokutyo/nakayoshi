@@ -15,7 +15,7 @@ $ bundle exec middleman server
 
 ```
 $ npm run js:build
-(= npm run js:lint && npm run js:babel && npm run js:uglify)
+(= npm run js:lint && npm run js:browserify && npm run js:uglify)
 $ bundle exec middleman build
 ```
 
