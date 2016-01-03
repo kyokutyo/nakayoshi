@@ -1,10 +1,9 @@
-これまでに夫婦で行った都道府県
-==============================
+# これまでに夫婦で行った都道府県
 
 ![開発中の画面キャプチャ](https://dl.dropboxusercontent.com/u/343/travel-memo.png)
 
-開発
-----
+
+## 開発
 
 ```
 $ cd path/to/nakayoshi
@@ -12,23 +11,30 @@ $ bundle exec middleman server
 ```
 
 
-デプロイ
---------
+## ビルド
 
 ```
+$ npm run js:build
+(= npm run js:lint && npm run js:babel && npm run js:uglify)
 $ bundle exec middleman build
+```
+
+
+## デプロイ
+
+```
+$ bundle exec middleman sync
 ```
 
 環境変数 `GA_TRACKING_ID` , `AWS_ACCESS_KEY_ID` と `AWS_SECRET_ACCESS_KEY` を設定しておく必要がある
 
 
-Lint
-----
+## Lint
 
 * ESLint
 
 ```
-$ ./node_modules/eslint/bin/eslint.js source/javascripts
+$ npm run js:lint
 ```
 
 * scss-lint
@@ -39,14 +45,12 @@ $ bundle exec scss-lint source/stylesheets/
 
 
 
-今後やろうかと思ってること
---------------------------
+## 今後やろうかと思ってること
 
 * [Issues](https://github.com/kyokutyo/nakayoshi/issues)
 
 
-使ってるもの
-------------
+## 使ってるもの
 
 * [middleman/middleman](https://github.com/middleman/middleman)
 * [Slim](http://slim-lang.com/)
@@ -62,3 +66,4 @@ $ bundle exec scss-lint source/stylesheets/
 * [karlfreeman/middleman-sync](https://github.com/karlfreeman/middleman-sync)
 * [S3](http://aws.amazon.com/jp/s3/)
 * [Route53](http://aws.amazon.com/jp/route53/)
+* [Babel](https://babeljs.io/)
