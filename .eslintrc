@@ -59,6 +59,9 @@
 		"wrap-iife": [2, "any"],
 		"yoda": [2, "never"],
 	},
+	"ecmaFeatures": {
+		"modules": true,
+	},
 	"env": {
 		"browser": true,
 		"jquery": true,
