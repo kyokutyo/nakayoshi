@@ -1,4 +1,6 @@
 import { List, Map } from 'immutable';
+// import $ from 'jquery';
+import * as _ from 'underscore';
 
 $(() => {
     const $items = $('.content li');

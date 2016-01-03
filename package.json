@@ -2,7 +2,8 @@
   "name": "nakayoshi",
   "description": "これまでに夫婦で行った都道府県",
   "dependencies": {
-    "immutable": "^3.7.6"
+    "immutable": "^3.7.6",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "babel-cli": "^6.1.18",
