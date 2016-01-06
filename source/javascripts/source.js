@@ -8,14 +8,14 @@ $(() => {
     const $messageBox = $('.js-message_box');
     const $percentageBox = $('.js-percentage_box');
     const $btnFilterVisited = $('.js-filter_visited');
-    const isSmartphone = !$('.js-sidebar').filter('.js-footer').is(':visible');
+    const isSmartphone = !$('.js-sidebar').find('.js-footer').is(':visible');
 
     // message
     $visitedItems.hover(function() {
         const $t = $(this);
 
-        $messageBox.find('p').html($t.data('msg')).end()
-                   .find('.date span').html($t.data('date')).end()
+        $messageBox.find('.js-message').html($t.data('msg')).end()
+                   .find('.js-date').html($t.data('date')).end()
                    .show();
     },
     () => {
@@ -27,7 +27,6 @@ $(() => {
     const percentage_box_width = $percentageBox.width() + 17; // 余白があるので大きめの画像を取得
     const bg_color = $.fmtColor($('body').css("background-color")).replace('#','');
 
-    console.log(percentage_box_width);
     $percentageBox.html('<strong>' + $visitedItems.length + '</strong>/' + $items.length)
                    .css('background-image', 'url("http://chart.apis.google.com/chart?cht=p&chd=t:' + percentage + ',' + (100 - percentage) + '&chs=' + percentage_box_width + 'x' + percentage_box_width + '&chco=' + bg_color + '")');
 
@@ -70,9 +69,9 @@ $(() => {
     // smartphone
     if (isSmartphone) {
         $items.not($visitedItems).hide();
-        $('.sidebar footer').clone()
-                            .addClass('pure-hidden-tablet')
-                            .addClass('pure-hidden-desktop')
-                            .appendTo($('.content'));
+        $('.js-footer').clone()
+                       .addClass('pure-hidden-tablet')
+                       .addClass('pure-hidden-desktop')
+                       .appendTo($('.js-content'));
     }
 });
