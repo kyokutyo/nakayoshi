@@ -11,7 +11,7 @@
     margin: 4px;
     padding: 7px;
     @include border-radius(3px, 3px);
-    &.v {
+    &.visited {
       background: transparentize($white, .4);
 
       &:hover {
