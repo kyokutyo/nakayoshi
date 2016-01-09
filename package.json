@@ -11,12 +11,14 @@
     "babelify": "^7.2.0",
     "browserify": "^12.0.1",
     "eslint": "^1.9.0",
-    "uglify-js": "^2.6.1"
+    "uglify-js": "^2.6.1",
+    "watchify": "^3.6.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "js:build": "npm run js:lint && npm run js:browserify && npm run js:uglify",
-    "js:browserify": "browserify source/javascripts/source.js -t babelify --outfile source/javascripts/all.js",
+    "js:browserify": "browserify -t [babelify] source/javascripts/source.js -o source/javascripts/all.js",
+    "js:watch": "watchify -t [ babelify ] source/javascripts/source.js -o source/javascripts/all.js -v",
     "js:uglify": "uglifyjs -c -m --source-map source/javascripts/all.js.map -o source/javascripts/all.js -- source/javascripts/all.js",
     "js:lint": "eslint source/javascripts"
   },
