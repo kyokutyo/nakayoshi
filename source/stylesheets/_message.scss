@@ -1,4 +1,4 @@
-#message {
+.message-box {
   $theme: $blue; // or $raspberry
   background: $theme;
   color: $white;
@@ -27,7 +27,7 @@
     text-align: left;
   }
 
-  .date {
+  .date-box {
     color: mix($white, $theme, 50%);
     font-size: .9em;
     text-align: right;
