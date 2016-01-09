@@ -1,13 +1,11 @@
 # これまでに夫婦で行った都道府県
 
-![開発中の画面キャプチャ](https://dl.dropboxusercontent.com/u/343/travel-memo.png)
-
-
 ## 開発
 
 ```
 $ cd path/to/nakayoshi
 $ bundle exec middleman server
+$ npm run js:watch
 ```
 
 
