@@ -16,7 +16,7 @@
   padding-top: #{$padding_top}px;
   text-align: center;
   width: #{$size}px;
-  @include border-radius(#{$radius_size}px, #{$radius_size}px);
+  border-radius: #{$radius_size}px;
   strong {
     color: $white;
     display: inline-block;

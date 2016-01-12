@@ -10,7 +10,7 @@
     list-style: none;
     margin: 4px;
     padding: 7px;
-    @include border-radius(3px, 3px);
+    border-radius: 3px;
     &.visited {
       background: transparentize($white, .4);
 

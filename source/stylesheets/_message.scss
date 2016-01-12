@@ -5,7 +5,7 @@
   display: none;
   padding: 10px;
   position: relative;
-  @include border-radius(5px, 5px);
+  border-radius: 5px;
   &:after {
     $size: 8;
     border: {

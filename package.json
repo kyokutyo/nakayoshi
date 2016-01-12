@@ -11,11 +11,14 @@
     "babelify": "^7.2.0",
     "browserify": "^12.0.1",
     "eslint": "^1.9.0",
+    "node-sass": "^3.4.2",
     "uglify-js": "^2.6.1",
     "watchify": "^3.6.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "css:build": "node-sass --output-style compressed --include-path source/stylesheets/ source/stylesheets/source.scss --source-map source/stylesheets/all.css.map source/stylesheets/all.css",
+    "css:watch": "node-sass -w --output-style compressed --include-path source/stylesheets/ source/stylesheets/source.scss --source-map source/stylesheets/all.css.map source/stylesheets/all.css",
     "js:build": "npm run js:lint && npm run js:browserify && npm run js:uglify",
     "js:browserify": "browserify -t [babelify] source/javascripts/source.js -o source/javascripts/all.js",
     "js:watch": "watchify -t [ babelify ] source/javascripts/source.js -o source/javascripts/all.js -v",

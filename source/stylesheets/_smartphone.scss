@@ -40,7 +40,7 @@ h1 {
   position: fixed;
   top: 90px;
   width: 96%;
-  @include border-radius(0, 0);
+  border-radius: 0;
   &:after {
     display: none;
   }

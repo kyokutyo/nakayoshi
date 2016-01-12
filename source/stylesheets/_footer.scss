@@ -10,7 +10,7 @@ footer.footer {
       margin: 15px 50px;
       padding: 10px;
       text-align: center;
-      @include border-radius(5px, 5px);
+      border-radius: 5px;
       .social {
         > iframe,
         > .fb-like {
@@ -38,7 +38,7 @@ footer.footer {
           position: relative;
           top: #{$size / 2.9}px;
           width: #{$size}px;
-          @include border-radius(#{$radius_size}px, #{$radius_size}px);
+          border-radius: #{$radius_size}px;
         }
       }
     }
