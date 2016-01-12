@@ -27,9 +27,8 @@ $(() => {
     const percentage_box_width = $percentageBox.width() + 17; // 余白があるので大きめの画像を取得
     const bg_color = $.fmtColor($('body').css("background-color")).replace('#','');
 
-    $percentageBox.html('<strong>' + $visitedItems.length + '</strong>/' + $items.length)
-                   .css('background-image', 'url("http://chart.apis.google.com/chart?cht=p&chd=t:' + percentage + ',' + (100 - percentage) + '&chs=' + percentage_box_width + 'x' + percentage_box_width + '&chco=' + bg_color + '")');
-
+    $percentageBox.html(`<strong>${$visitedItems.length}</strong>/${$items.length}`)
+                   .css('background-image', `url("http://chart.apis.google.com/chart?cht=p&chd=t:${percentage},${(100 - percentage)}&chs=${percentage_box_width}x${percentage_box_width}&chco=${bg_color}")`);
     // filter_visited
     $btnFilterVisited.on('click', function() {
         const $t = $(this);
