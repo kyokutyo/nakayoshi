@@ -1,6 +1,26 @@
 import { List, Map } from 'immutable';
 // import $ from 'jquery';
 import * as _ from 'underscore';
+import React from 'react';
+import { render } from 'react-dom';
+
+class PrefList extends React.Component {
+    constructor (props) {
+        super(props);
+        this.state = {
+            count: props.initialCcount
+        };
+    }
+    render() {
+        return (
+            <div className="country">
+                aaabbbccc {this.state.count}
+            </div>
+       );
+    }
+};
+
+console.log(PrefList);
 
 $(() => {
     const $items = $('.js-item');
