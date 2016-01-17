@@ -49,30 +49,6 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
-  # For example, change the Compass output style for deployment
-  # activate :minify_css
-
-  ###
-  # Compass
-  ###
-
-  # Change Compass configuration
-  compass_config do |config|
-    config.output_style = :compressed
-  end
-
-  # Minify Javascript on build
-  # activate :minify_javascript
-
-  # Enable cache buster
-  activate :asset_hash
-
-  # Use relative URLs
-  # activate :relative_assets
-
-  # Or use a different image path
-  # set :http_path, "/Content/images/"
-
   # Activate google-analytics extension
   activate :google_analytics do |ga|
     ga.tracking_id = ENV['GA_TRACKING_ID']

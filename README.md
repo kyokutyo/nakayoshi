@@ -56,7 +56,6 @@ $ bundle exec scss-lint source/stylesheets/
 * [jquery/jquery](https://github.com/jquery/jquery)
 * [jquery-color-utils](https://code.google.com/p/jquery-color-utils/)
 * [Pure](http://purecss.io/)
-* [yterajima/middleman-pure](https://github.com/yterajima/middleman-pure)
 * [Google Fonts Nunito](http://www.google.com/fonts/specimen/Nunito)
 * [Google Charts](https://developers.google.com/chart/?hl=ja)
 * [Google Analytics](http://www.google.co.jp/intl/ja/analytics/)
