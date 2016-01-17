@@ -27,13 +27,13 @@ h1 {
   margin: 0 1.5em;
 }
 
-#percentage {
+.percentage-box {
   margin: 0 auto 110px;
   position: relative;
   top: 90px;
 }
 
-#message {
+.message-box {
   background: rgba($blue, .95);
   border-radius: 0;
   margin: 0;
