@@ -6,11 +6,12 @@
 
   li {
     background: transparentize($white, .7);
+    border-radius: 3px;
     color: darken($blue, 20%);
     list-style: none;
     margin: 4px;
     padding: 7px;
-    border-radius: 3px;
+
     &.visited {
       background: transparentize($white, .4);
 

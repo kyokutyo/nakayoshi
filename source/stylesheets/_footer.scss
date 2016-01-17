@@ -7,10 +7,11 @@ footer.footer {
   nav.nav {
     .nav-list {
       background: rgba($white, .5);
+      border-radius: 5px;
       margin: 15px 50px;
       padding: 10px;
       text-align: center;
-      border-radius: 5px;
+
       .social {
         > iframe,
         > .fb-like {
@@ -32,13 +33,13 @@ footer.footer {
             position: center center;
             repeat: no-repeat;
           };
+          border-radius: #{$radius_size}px;
           display: inline-block;
           height: #{$size}px;
           margin: 0 #{$size / 2.7}px;
           position: relative;
           top: #{$size / 2.9}px;
           width: #{$size}px;
-          border-radius: #{$radius_size}px;
         }
       }
     }

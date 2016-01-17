@@ -1,11 +1,12 @@
 .message-box {
   $theme: $blue; // or $raspberry
   background: $theme;
+  border-radius: 5px;
   color: $white;
   display: none;
   padding: 10px;
   position: relative;
-  border-radius: 5px;
+
   &:after {
     $size: 8;
     border: {
