@@ -23,7 +23,8 @@
     "js:browserify": "browserify -t [babelify] source/javascripts/source.js -o source/javascripts/all.js",
     "js:watch": "watchify -t [ babelify ] source/javascripts/source.js -o source/javascripts/all.js -v",
     "js:uglify": "uglifyjs -c -m --source-map source/javascripts/all.js.map -o source/javascripts/all.js -- source/javascripts/all.js",
-    "js:lint": "eslint source/javascripts"
+    "js:lint": "eslint source/javascripts",
+    "build": "npm run js:build && npm run css:build"
   },
   "repository": {
     "type": "git",
