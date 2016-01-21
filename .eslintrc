@@ -61,6 +61,7 @@
 	},
 	"ecmaFeatures": {
 		"modules": true,
+		"jsx": true,
 	},
 	"env": {
 		"browser": true,

@@ -3,24 +3,65 @@ import { List, Map } from 'immutable';
 import * as _ from 'underscore';
 import React from 'react';
 import { render } from 'react-dom';
+import * as axios from 'axios';
 
-class PrefList extends React.Component {
-    constructor (props) {
-        super(props);
-        this.state = {
-            count: props.initialCcount
-        };
-    }
+class Pref extends React.Component {
     render() {
         return (
-            <div className="country">
-                aaabbbccc {this.state.count}
-            </div>
+            <li className="js-pref">
+                {this.props.name}
+            </li>
        );
     }
 };
 
-console.log(PrefList);
+class PrefList extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        const PrefNodes = this.props.prefs.map((pref) => {
+            return (
+                <Pref key={pref.name} name={pref.name} date={pref.date} visited={pref.visited} message={pref.message} />
+            );
+        });
+
+        return (
+            <ul>
+                {PrefNodes}
+            </ul>
+       );
+    }
+};
+
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {prefs: []};
+    }
+
+    loadData() {
+        axios.get(this.props.url)
+             .then((response) => {
+                 this.setState({prefs: response.data.prefs});
+        });
+    }
+
+    componentDidMount() {
+        this.loadData();
+    }
+
+    render() {
+        return (
+            <PrefList prefs={this.state.prefs} />
+        );
+    }
+};
+
+render(
+  <App url="/javascripts/data.json" />,
+  document.getElementsByClassName('js-content')[0]
+);
 
 $(() => {
     const $items = $('.js-item');
