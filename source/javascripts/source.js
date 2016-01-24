@@ -8,7 +8,7 @@ import * as axios from 'axios';
 class Pref extends React.Component {
     render() {
         return (
-            <li className="js-pref">
+            <li className={ this.props.visited ? 'js-pref visited js-visited' : 'js-pref' } data-date={this.props.date} data-msg={this.props.message}>
                 {this.props.name}
             </li>
        );
