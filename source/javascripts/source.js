@@ -27,10 +27,35 @@ class PrefList extends React.Component {
         });
 
         return (
-            <ul>
-                {PrefNodes}
-            </ul>
+            <div className="js-content content">
+                <ul>
+                    {PrefNodes}
+                </ul>
+            </div>
        );
+    }
+};
+
+class Control extends React.Component {
+    render() {
+        return (
+            <div id="ctrl" className="pure-hidden-phone">
+                <nav className="nav">
+                    <h5>
+                        <i className="icon-filter"></i>
+                        表示オプション
+                    </h5>
+                    <ul>
+                        <li>
+                            <a className="js-filter_visited" href="#">
+                                <i className="icon-check-empty"></i>
+                                行ったことのある都道府県のみ表示
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        );
     }
 };
 
@@ -53,14 +78,18 @@ class App extends React.Component {
 
     render() {
         return (
-            <PrefList prefs={this.state.prefs} />
+            <div className="pure-u-i main">
+                <Control />
+                <PrefList prefs={this.state.prefs} />
+            </div>
         );
     }
 };
 
 render(
   <App url="/javascripts/data.json" />,
-  document.getElementsByClassName('js-content')[0]
+  document.getElementById('app')
+  // document.getElementsByClassName('js-content')[0]
 );
 
 $(() => {

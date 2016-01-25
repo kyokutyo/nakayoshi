@@ -8,7 +8,11 @@ body {
   position: relative;
 }
 
-.sidebar {
+#app {
+  width: 100%;
+}
+
+#app .sidebar {
   background: $white;
   bottom: 0;
   color: $blue;

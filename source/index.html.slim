@@ -3,86 +3,27 @@ title: これまでに夫婦で行った都道府県
 ---
 
 #layout.pure-g-r
-  .sidebar.js-sidebar.pure-u
-    header.header
-      hgroup
-        h1.brand-title これまでに夫婦で行った都道府県
-      .percentage-box.js-percentage_box
-      .message-box.js-message_box.pure-hidden-phone
-        p.js-message
-        .date-box
-          i.icon-time
-          span.js-date
-    footer.footer.js-footer.pure-hidden-phone
-      nav.nav
-        .nav-list
-          .social
-            a.twitter-share-button href="https://twitter.com/share" data-via="kyokutyo" data-lang="ja" ツイート
-            script !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-            div.fb-like data-width="180" data-height="23" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="false" data-send="false"
-          p.nav-items
-            | kyokutyo
-            span.icon
-            == link_to "Twitter", "https://twitter.com/kyokutyo"
-            |  &bull; 
-            == link_to "Tumblr", "http://kyokutyo.tumblr.com/"
-  .pure-u-1
-    #ctrl.pure-hidden-phone
-      nav.nav
-        h5
-          i.icon-filter
-          | 表示オプション
-        ul
-          li
-            a.js-filter_visited href="javascript:void(0)"
-              i.icon-check-empty
-              | 行ったことのある都道府県のみ表示
-    .content.js-content
-      ul
-        li.js-item 北海道
-        li.js-item 青森県
-        li.js-item 岩手県
-        li.js-item 宮城県
-        li.js-item 秋田県
-        li.js-item 山形県
-        li.js-item.js-visited.visited data-date="200x.7.x" data-msg="誕生日祝いで会津若松へ。" 福島県
-        li.js-item 茨城県
-        li.js-item.js-visited.visited data-date="200x.x.x" data-msg="宇都宮に餃子を食べに行った。" 栃木県
-        li.js-item.js-visited.visited data-date="201x.x.x" data-msg="草津へ。" 群馬県
-        li.js-item 埼玉県
-        li.js-item.js-visited.visited data-date="200x.7.x" data-msg="誕生日祝いで鋸山へ。" 千葉県
-        li.js-item.js-visited.visited data-date="201x.x.x" data-msg="京王プラザホテル。" 東京都
-        li.js-item.js-visited.visited data-date="200x.7.x" data-msg="誕生日祝いで江ノ島へ。その後、小田原や箱根にも行った。" 神奈川県
-        li.js-item 新潟県
-        li.js-item 富山県
-        li.js-item.js-visited.visited data-date="200x.x.x" data-msg="山中温泉と石川市内へ。ホテルの近くで祭りやってた。台風が来た。" 石川県
-        li.js-item 福井県
-        li.js-item.js-visited.visited data-date="2013.9.28" data-msg="石和温泉へ。武田神社や舞鶴城も行った。子どもが生まれる前の最後の旅行。" 山梨県
-        li.js-item 長野県
-        li.js-item 岐阜県
-        li.js-item.js-visited.visited data-date="2013.x.x" data-msg="伊豆長岡へ。全館畳敷きの宿 楽山やすだ。ロープウェイなど乗った。" 静岡県
-        li.js-item 愛知県
-        li.js-item.js-visited.visited data-date="200x.x.x" data-msg="伊勢神宮へ。夫婦岩も見に行った。" 三重県
-        li.js-item.js-visited.visited data-date="200x.x.x" data-msg="京都観光の拠点として。雪が降ってた。琵琶湖も見た。" 滋賀県
-        li.js-item.js-visited.visited data-date="200x.x.x" data-msg="寺見たり。天橋立行ったり。" 京都府
-        li.js-item.js-visited.visited data-date="200x.x.x" data-msg="ユニバーサル・スタジオ・ジャパン行った。その他にも何回か行ってる気がする。" 大阪府
-        li.js-item.js-visited.visited data-date="200x.x.x" data-msg="小豆島と淡路島へ行く拠点として姫路泊。" 兵庫県
-        li.js-item 奈良県
-        li.js-item.js-visited.visited data-date="200x.x.x" data-msg="熊野古道へ。山の中の宿 冨士屋泊。川湯あったけど天気悪く入れず。" 和歌山県
-        li.js-item 鳥取県
-        li.js-item 島根県
-        li.js-item 岡山県
-        li.js-item 広島県
-        li.js-item 山口県
-        li.js-item 徳島県
-        li.js-item 香川県
-        li.js-item 愛媛県
-        li.js-item 高知県
-        li.js-item 福岡県
-        li.js-item 佐賀県
-        li.js-item.js-visited.visited data-date="2012.11.16" data-msg="姉の結婚式で長崎駅前のホテル泊。" 長崎県
-        li.js-item 熊本県
-        li.js-item.js-visited.visited data-date="2014.4.4" data-msg="こども連れて初の旅行。別府へ。ちょうど祭りやってた。" 大分県
-        li.js-item 宮崎県
-        li.js-item 鹿児島県
-        li.js-item 沖縄県
+  #app
+    .sidebar.js-sidebar.pure-u
+      header.header
+        hgroup
+          h1.brand-title これまでに夫婦で行った都道府県
+        .percentage-box.js-percentage_box
+        .message-box.js-message_box.pure-hidden-phone
+          p.js-message
+          .date-box
+            i.icon-time
+            span.js-date
+      footer.footer.js-footer.pure-hidden-phone
+        nav.nav
+          .nav-list
+            .social
+              a.twitter-share-button href="https://twitter.com/share" data-via="kyokutyo" data-lang="ja" ツイート
+              script !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+              div.fb-like data-width="180" data-height="23" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="false" data-send="false"
+            p.nav-items
+              | kyokutyo
+              span.icon
+              == link_to "Twitter", "https://twitter.com/kyokutyo"
+              |  &bull; 
+              == link_to "Tumblr", "http://kyokutyo.tumblr.com/"
