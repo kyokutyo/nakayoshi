@@ -2,28 +2,5 @@
 title: これまでに夫婦で行った都道府県
 ---
 
-#layout.pure-g-r
-  #app
-    .sidebar.js-sidebar.pure-u
-      header.header
-        hgroup
-          h1.brand-title これまでに夫婦で行った都道府県
-        .percentage-box.js-percentage_box
-        .message-box.js-message_box.pure-hidden-phone
-          p.js-message
-          .date-box
-            i.icon-time
-            span.js-date
-      footer.footer.js-footer.pure-hidden-phone
-        nav.nav
-          .nav-list
-            .social
-              a.twitter-share-button href="https://twitter.com/share" data-via="kyokutyo" data-lang="ja" ツイート
-              script !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-              div.fb-like data-width="180" data-height="23" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="false" data-send="false"
-            p.nav-items
-              | kyokutyo
-              span.icon
-              == link_to "Twitter", "https://twitter.com/kyokutyo"
-              |  &bull; 
-              == link_to "Tumblr", "http://kyokutyo.tumblr.com/"
+#app
+script !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");

@@ -59,7 +59,46 @@ class Control extends React.Component {
     }
 };
 
-class App extends React.Component {
+class Sidebar extends React.Component {
+    render() {
+        return (
+            <div className="sidebar js-sidebar pure-u">
+                <header className="header">
+                    <hgroup>
+                        <h1 className="brand-title">これまでに夫婦で行った都道府県</h1>
+                    </hgroup>
+                    <div className="percentage-box js-percentage_box" />
+                    <div className="message-box js-message_box pure-hidden-phone">
+                        <p className="js-message" />
+                        <div className="date-box">
+                            <i className="icon-time" />
+                            <span className="js-date" />
+                        </div>
+                    </div>
+                </header>
+                <footer className="footer js-footer pure-hidden-phone">
+                    <nav className="nav">
+                        <div className="nav-list">
+                            <div className="social">
+                                <a className="twitter-share-button" href="https://twitter.com/share" data-via="kyokutyo" data-lang="ja">ツイート</a>
+                                <div className="fb-like" data-width="180" data-height="23" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="false" data-send="false" />
+                            </div>
+                            <p className="nav-items">
+                                kyokutyo
+                                <span className="icon" />
+                                <a href="https://twitter.com/kyokutyo">Twitter</a>
+                                |  &bull;
+                                <a href="http://kyokutyo.tumblr.com/">Tumblr</a>
+                            </p>
+                        </div>
+                    </nav>
+                </footer>
+            </div>
+        );
+    }
+};
+
+class Main extends React.Component {
     constructor(props) {
         super(props);
         this.state = {prefs: []};
@@ -86,10 +125,20 @@ class App extends React.Component {
     }
 };
 
+class App extends React.Component {
+    render() {
+        return (
+            <div id="layout" className="pure-g-r">
+                <Sidebar />
+                <Main url="/javascripts/data.json" />
+            </div>
+        );
+    }
+};
+
 render(
-  <App url="/javascripts/data.json" />,
+  <App />,
   document.getElementById('app')
-  // document.getElementsByClassName('js-content')[0]
 );
 
 $(() => {
