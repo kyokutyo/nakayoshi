@@ -26737,7 +26737,7 @@ var App = (function (_React$Component4) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                { className: 'pure-u-i main' },
+                { className: 'pure-u-1 main' },
                 _react2.default.createElement(Control, null),
                 _react2.default.createElement(PrefList, { prefs: this.state.prefs })
             );

@@ -78,7 +78,7 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className="pure-u-i main">
+            <div className="pure-u-1 main">
                 <Control />
                 <PrefList prefs={this.state.prefs} />
             </div>
